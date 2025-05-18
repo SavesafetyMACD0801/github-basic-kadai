@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Generative AI Platform</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.5; }
+  header { background-color: #333; color: #fff; padding: 1em; text-align: center; }
+  section { padding: 1em; }
+  #hero { background-color: #f5f5f5; text-align: center; }
+  #hero img { max-width: 100%; height: auto; }
+  #product-details { background-color: #f0f0f0; }
+  footer { background-color: #333; color: #fff; text-align: center; padding: 1em; }
+  form { display: flex; flex-direction: column; max-width: 300px; margin: auto; }
+  input, textarea { margin-bottom: 0.5em; padding: 0.5em; }
+  button { padding: 0.5em; }
+</style>
+<script>
+  function submitContact(event) {
+    event.preventDefault();
+    alert('お問い合わせありがとうございます。');
+  }
+</script>
+</head>
+<body>
+  <header>
+    <h1>Generative AI Platform</h1>
+  </header>
+
+  <section id="hero">
+    <h2>より速く、より賢く創造する</h2>
+    <img src="kadai_github/GitHubサンプル.png" alt="platform screenshot">
+  </section>
+
+  <section id="product">
+    <h2>プロダクトセクション</h2>
+    <p>私たちのAIプラットフォームはテキスト、画像、コード生成を統合し、カスタムモデルでワークフローを強化します。</p>
+  </section>
+
+  <section id="product-details">
+    <h2>プロダクト詳細</h2>
+    <ul>
+      <li>柔軟なAPI</li>
+      <li>テンプレートライブラリ</li>
+      <li>即時デプロイ</li>
+    </ul>
+  </section>
+
+  <section id="blog">
+    <h2>ブログセクション</h2>
+    <article>
+      <h3>生成AIの最新トレンド</h3>
+      <p>最新の研究やTipsをお届けします。</p>
+    </article>
+  </section>
+
+  <section id="contact">
+    <h2>問合せ</h2>
+    <form onsubmit="submitContact(event)">
+      <input type="email" placeholder="メールアドレス" required>
+      <textarea placeholder="メッセージ" required></textarea>
+      <button type="submit">送信</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Generative AI Platform - <a href="#contact" style="color:white;">お問い合わせはこちら</a></p>
+  </footer>
+</body>
+</html>
